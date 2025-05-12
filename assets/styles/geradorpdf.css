@@ -1,0 +1,216 @@
+html, body {
+  height: 100%; /* Faz a altura da página ser 100% da altura da janela */
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o padding padrão */
+  width: 800px;  /* Largura fixa */
+  height: 1100px; /* Altura fixa */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  min-height: 100vh;
+  text-align:left;
+  background-color: #141222;
+
+  background-image: url('../assets/fundovt.png');/* Caminho da imagem */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-position: center; /* Centraliza a imagem */
+font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Customização da barra de rolagem para navegadores baseados em WebKit */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #100564;
+ 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color:  #1a099a;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #909090;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0.2px;
+  width: 100%;
+  background-color: #070138d4;
+  color: white;
+  text-align: center;
+  height: 50px;
+
+  box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 0.635);
+
+}
+
+  #pdf-assinar {
+   align-items: left;
+    width: 20%;
+    padding:  10px;
+    border: none;
+    border-radius: 5px;  
+    margin-top:  7px; 
+    background-color: #428d70;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  #baixar{
+    align-items: right;
+    width: 18%;
+    padding:  10px;
+    border: none;
+    border-radius: 5px;
+    margin-top:  7x;  
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: rgba(194, 1, 39, 0.911);
+    font-weight: 500;
+    cursor: pointer;
+
+  }
+
+  #baixar-em-branco{
+    align-items: right;
+    width: 18%;
+    padding:  10px;
+    border: none;
+    border-radius: 5px;
+    margin-top:  7x;  
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: rgba(157, 154, 154, 0.911);
+    font-weight: 500;
+    cursor: pointer;
+
+  }
+
+  #genereta-pdf{
+    align-items: right;
+    width: 18%;
+    padding:  10px;
+    border: none;
+    border-radius: 5px;
+    margin-top:  7x;  
+    background-color: rgba(209, 206, 11, 0.911);
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+ #genereta-pdf:hover{
+  background-color: rgba(216, 159, 61, 0.911);
+ }
+
+ #baixar:hover{
+  background-color: rgba(224, 68, 68, 0.911);
+  
+ }
+
+ #pdf-assinar:hover{
+  background-color: rgba(73, 218, 150, 0.911);
+ }
+
+ #baixar-em-branco:hover{
+  background-color: rgba(33, 33, 33, 0.911);
+  color: aliceblue;
+ }
+ 
+  #steflogo-icon-termo{
+
+    height: 80x;
+    width: 230px;
+  } 
+
+h1{
+   font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.47em;
+}
+
+  #tableinicial{
+    border-collapse: collapse;
+    border: 0.5px solid rgb(0, 0, 0); 
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    
+  }
+  
+
+#option{
+  border-collapse: collapse;
+  font-family: calibri;
+  font-family: sans-serif;
+  font-size: 0.8rem; 
+}
+
+#tablelegend{
+  border-collapse: collapse;
+  border: 0.5px solid rgb(0, 0, 0); 
+  font-family: sans-serif;
+  font-size: 0.5rem;
+  height: 130px;
+  
+}
+
+#text-assinatura{
+  font-family: sans-serif;
+  font-size: 0.650rem;
+  line-height:1.3em;;
+}
+
+#table-date{
+  border-collapse: collapse;
+  font-family: calibri;
+  font-family: sans-serif; 
+  border: none;
+  
+}
+
+#tipos{
+
+  font-size: 0.75rem; 
+
+}
+
+#table-assinatura{
+  border: 1.5px solid rgb(0, 0, 0); 
+  width:750px;
+  height: 60px;
+  font-size: 0.60rem;
+  font-family: 'Nunito Sans', sans-serif;
+  
+}
+
+td {
+  border: 1px solid rgb(0, 0, 0);
+  border: 0.9px solid rgb(0, 0, 0);  
+}
+
+
+  tbody > tr:nth-of-type(even) {
+    background-color: rgb(254, 254, 255);
+  }
+  
+
+  #back{
+    background-color: rgba(175, 175, 179, 0.541);
+  }
+
+#borda{
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(0.2, 0.2, 0.2, 0.2)  !important; 
+  padding: 10px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  width: 800px;
+  align-items: center;
+  background-color: white;
+  margin-top: 10px;
+
+}
+
+
