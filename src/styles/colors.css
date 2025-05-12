@@ -1,0 +1,54 @@
+/*** CORES ***/
+:root{
+  --oc-base:     #00b5ad;
+  --oc-dark:     #002E2B;
+  --oc-white:    #f0f2f2;
+  --oc-gray:     #687c7a;
+
+
+  --green:      #00A96A;
+  --light-green:#00D391;
+  --blue:       #0091D3;
+  --red:        #DC3232;
+  --pink:       #D30091;
+  --orange:     #DB8E00;
+  --yellow:     #FFCC50;
+}
+
+/*** CORES DE FONTE ***/
+.oc-base{
+  color: var(--oc-base);
+}
+
+.oc-dark{
+  color: var(--oc-dark);
+}
+
+.oc-white{
+  color: var(--oc-white);
+}
+
+.oc-gray{
+  color: var(--oc-gray);
+}
+
+.green{
+  color: var(--green);
+}
+
+.blue{
+  color: var(--blue);
+}
+
+/*** CORES PARA BG ***/
+.bg-oc-base{
+  background-color: var(--oc-base);
+}
+
+.bg-oc-dark{
+  background-color: var(--oc-dark);
+}
+
+.bg-green{
+  background-color: var(--green);
+}

@@ -1,0 +1,47 @@
+/*** FORMATAÇÃO ***/
+body{
+  background-color: rgb(32, 33, 36);
+ 
+}
+
+label{
+  color: #d7d7c5 ;
+}
+/* OncoSD */
+#oncosd {
+  min-width: 530px;
+  background-color: rgb(32, 33, 36);
+}
+
+
+
+/*Lista de link e buttoes da mesma class*/
+.list-group-item{
+  background-color: rgb(38, 38, 38)!important;
+  background-attachment: fixed !important;
+  color:  rgb(152, 209, 209) ;
+  border-color: rgb(59, 59, 59) !important;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 35%;
+  text-align: center;
+
+}
+
+
+/*Link da aplicação */
+.link.list-group-item.oncosd-btn{
+  color: #00918A;
+}
+.link.list-group-item.oncosd-btn:hover{
+  color: #20ae01;
+ }
+
+
+/* Icons do menu principal */
+#menuicon {
+  width: 50px;
+  height: 50px;
+  
+}
+
