@@ -21,10 +21,10 @@ label{
   background-attachment: fixed !important;
   color:  rgb(152, 209, 209) ;
   border-color: rgb(59, 59, 59) !important;
-  width: 300px;
+  width: 400px;
   margin-top: 50px;
   margin-left: 35%;
-  text-align: center;
+  text-align: left;
 
 }
 
@@ -32,6 +32,7 @@ label{
 /*Link da aplicação */
 .link.list-group-item.oncosd-btn{
   color: #00918A;
+  
 }
 .link.list-group-item.oncosd-btn:hover{
   color: #20ae01;
@@ -44,4 +45,6 @@ label{
   height: 50px;
   
 }
+
+
 
