@@ -168,8 +168,52 @@ window.onload = function(){
 
 }  
 
-             
-  // Função que defina a mascara dos campos
+function baixarembranco(){
+  
+const tabeladate = document.getElementById('table-date');
+    const tabela = document.getElementById('tableinicial');
+    const campos = tabela.querySelectorAll('input');
+    const camposdate = tabeladate.querySelectorAll('input');
+    let algumVazio = false;
+  
+    campos.forEach(campo => {
+      if (campo.value.trim() === '') {
+   
+        campo.style.border = '0px solid rgba(255, 0, 0, 0)'; // Limpa borda se preenchido
+      }
+    });
+
+    camposdate.forEach(campo => {
+      if (campo.value.trim() === '') {
+       
+        campo.style.border = '0px solid rgba(255, 0, 0, 0)'; // Limpa borda se preenchido
+        campo.style.borderBottom = '1.4px solid black';
+      }
+    });
+
+   
+  
+  window.scrollTo(0, 0);
+
+  const content = document.querySelector("#content");
+
+  const options = {
+    margin: [2, 3.5, 2, 3.5], // Margens: [cima, direito, baixo, esquerda]
+    filename: "Proposta_VT_Preenchida.pdf",
+    image: { type: 'jpeg', quality: 1 },
+    tml2canvas: {scale:200, logging: true, dpi:1200, letterRendering:true},
+    jsPDF: {unit: "mm", format: "a4", orientation: "portrait" }
+}
+
+alert('Caso haja distorções na qualidade da renderização do documento ou a resolução fique baixa, defina o ZOOM da página para 150% ou mais e você obterá alta definição na qualidade do documento.');
+
+html2pdf().set(options).from(content).save(); 
+
+}
+
+
+
+// Função que defina a mascara dos campos
 
 function formatWithMask(value, mask) {
   // Remove tudo que não é dígito
@@ -205,25 +249,3 @@ function attachMasks() {
 }
 // Inicializa após carregar a página
 document.addEventListener('DOMContentLoaded', attachMasks);
-
-
-
-function baixarembranco(){
-
-  window.scrollTo(0, 0);
-
-  const content = document.querySelector("#content");
-
-  const options = {
-    margin: [2, 3.5, 2, 3.5], // Margens: [cima, direito, baixo, esquerda]
-    filename: "Proposta_VT_Preenchida.pdf",
-    image: { type: 'jpeg', quality: 1 },
-    tml2canvas: {scale:200, logging: true, dpi:1200, letterRendering:true},
-    jsPDF: {unit: "mm", format: "a4", orientation: "portrait" }
-}
-
-alert('Caso haja distorções na qualidade da renderização do documento ou a resolução fique baixa, defina o ZOOM da página para 150% ou mais e você obterá alta definição na qualidade do documento.');
-
-html2pdf().set(options).from(content).save(); 
-
-}
