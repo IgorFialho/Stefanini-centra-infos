@@ -13,7 +13,7 @@ html, body {
   background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
   background-repeat: no-repeat; /* Evita repetição da imagem */
   background-position: center; /* Centraliza a imagem */
-font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 /* Customização da barra de rolagem para navegadores baseados em WebKit */
@@ -49,8 +49,14 @@ footer {
 }
 
   #pdf-assinar {
+     background-image: url('../assets/govbr.png'); 
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px 20px;
+    padding: 10px 10px 10px 10px;
+    text-align: right;
    align-items: left;
-    width: 20%;
+    width: 21%;
     padding:  10px;
     border: none;
     border-radius: 5px;  
@@ -61,8 +67,14 @@ footer {
   }
 
   #baixar{
+     background-image: url('../assets/baixar-pdf.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px 20px;
+    padding: 10px 10px 10px 10px;
+    text-align: right;
     align-items: right;
-    width: 18%;
+    width: 18.8%;
     padding:  10px;
     border: none;
     border-radius: 5px;
@@ -76,6 +88,12 @@ footer {
   }
 
   #baixar-em-branco{
+    background-image: url('../assets/em-branco.png'); 
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px 20px;
+    padding: 10px 10px 10px 10px;
+    text-align: right;
     align-items: right;
     width: 18%;
     padding:  10px;
@@ -91,6 +109,12 @@ footer {
   }
 
   #genereta-pdf{
+    background-image: url('../assets/impressora.png'); 
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px 20px;
+    padding: 10px 10px 10px 10px;
+    text-align: right;
     align-items: right;
     width: 18%;
     padding:  10px;
@@ -210,7 +234,6 @@ td {
   align-items: center;
   background-color: white;
   margin-top: 10px;
-
 }
 
 
